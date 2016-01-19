@@ -1,12 +1,13 @@
 DISCLAIMER: I have many years as a security professional. This information is freely given, not proprietary, and has no guarantees. I hope that you find it useful. suggestion for improvements are always welcome.
 
-WHY YOU SHOULD CARE: 
+## WHY YOU SHOULD CARE: 
 
 1. If you have any **information** that can damage you or your customers you have an obligation to protect it. 
 1. If you have any **online services and systems** that are critical to your operations.
 1. If **public defacement** would damage your business
 1. If **you have no idea** where you sit on all of the above.
 
+## Security Checklist
 1. **Hire a CISO** First things first. Hire someone that is dedicated to your information security and can spend the necessary time to walk through this process. A good competent CISO should be capable of all of the tasks here, just maybe not all at once. It will be a serial process until/unless there is more staff. Sometimes 1 person is all that is justified or acn be spared in budget, but it's so much better than anyone part time or none at all.
 1. basics like **virus protection** on endpoints
   - https://antivirus.comodo.com/
