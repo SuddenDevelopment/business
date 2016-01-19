@@ -7,8 +7,9 @@
   - run on a hosted sandbox: malwr.com
   - look it up http://virustotal.com
 1. **prevent spam** from getting to user inboxes, if you use something like Gmail you should be pretty good already, if you run Excahnge you'll need to buy something.
-1. **user training** on "don't click on that url". Phish your users, generate the URLs with something that lets you know who clicked on a URL for reporting. Then you know who needs a refresher course.
-  - HAve anyone REALLY interested in security? Send them here to learn to start thinking from an informed security perspective: http://captf.com/practice-ctf/	
+1. **employee training**. 
+  - Phish your users, generate the URLs with something that lets you know who clicked on a URL for reporting. Then you know who needs a refresher course.
+  - Have anyone REALLY interested in security? Send them here to learn to start thinking from an informed security perspective: http://captf.com/practice-ctf/	
 1. **Developer training** start here:
   - https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
 1. **Identify what is critical** and what is not, what is worth securing? Don't just focus on the perimeter, many things come from inside your network. Identfy user land separate from systems land
@@ -26,8 +27,10 @@
   - https://github.com/aol/moloch
 1. **Add alerts** scenarios to your SIEM
 1. **open source scan** everything 
+  - https://www.shodan.io/search?query=1.2.3.4
   - http://www.openvas.org/ 
   - http://sqlmap.org/ 
+  - https://github.com/tcstool/NoSQLMap
   - http://buffer.github.io/thug/ analyze and resolve found issues
   - https://github.com/rapid7/metasploit-framework
 1. **Harden apps** programtically, do you stop brute force password attempts? Clean all vars, pay special attention to var length.
