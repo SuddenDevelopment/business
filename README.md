@@ -1,3 +1,5 @@
+DISCLAIMER: I have many years as a security professional. This information is freely given, not proprietary, and has no garuntees. I hope that you find it useful. suggestion for improvements are alwasy welcome.
+
 1. **Hire a CISO** First things first. Hire someone that is dedicated to your information security and can spend the necessary time to walk through this process. A good competent CISO should be capable of all of the tasks here, just maybe not all at once. It will be a serial process until/unles there is more staff, but one person can go a long ways
 1. basics like **virus protection** on endpoints
   - https://antivirus.comodo.com/
@@ -19,7 +21,7 @@
   - https://www.alienvault.com/solutions/siem-log-management
 1. **baseline your network**, throw everything at the SIEM, look at it, what's normal, what's unusual, establish a baseline of what your network should look like.
 1. **examine your activity** Identify what definitely should not happen on your network, they sections like user land and systems, infrastructure ips, outside in, inside out etc.
-1. Look into an IPS/IDS/PROXY base don your needs. they should be able to give you significant data into your SIEM to investigate. Keep in mind these will have false positives but it's good to have this data to start with and then start filtering.
+1. Look into an **IPS/IDS/PROXY** based on your needs. they should be able to give you significant data into your SIEM to investigate. Keep in mind these will have false positives but it's good to have this data to start with and then start filtering.
   - http://suricata-ids.org/
   - https://www.bro.org/
   - http://www.squid-cache.org/
