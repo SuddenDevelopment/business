@@ -1,6 +1,7 @@
 DISCLAIMER: I have many years as a security professional. This information is freely given, not proprietary, and has no guarantees. I hope that you find it useful. suggestion for improvements are always welcome.
 
 WHY YOU SHOULD CARE: 
+
 1. If you have any **information** that can damage you or your customers you have an obligation to protect it. 
 1. If you have any **online services and systems** that are critical to your operations.
 1. If **public defacement** would damage your business
