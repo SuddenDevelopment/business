@@ -22,7 +22,15 @@ DISCLAIMER: I have many years as a security professional. This information is fr
   - Have anyone REALLY interested in security? Send them here to learn to start thinking from an informed security perspective: http://captf.com/practice-ctf/	
 1. **Developer training** start here:
   - https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
+  - http://retirejs.github.io/retire.js/
 1. **Identify what is critical** and what is not, what is worth securing? Don't just focus on the perimeter, many things come from inside your network. Identfy user land separate from systems land
+  - Code repositories
+  - customer account information
+  - Accounting data
+  - Email & ticket systems
+  - File shares / document repositories
+  - internal system credentials / authentication
+  - All of the above in backups
 1. **Reduce the footprint of critical assets** If what is most valuable is spread out everywhere can you consolidate it so that you can focus on hardening a smaller area (For example access audit logs, tight controls)
 1. **secure your most valuable area** internal firewall or whatever is appropriate, think at multiple layers. I cant tell you what is most valuable.
 1. **get a  SIEM**, there are a few free ones, or you can write your own if you are proficient in large data stream handling
