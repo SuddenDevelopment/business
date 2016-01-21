@@ -57,12 +57,15 @@ DISCLAIMER: I have many years as a security professional. This information is fr
   - be careful with free crowd sourced threat feeds. They are often poisoned and they are very stale.
   - Create you own batch feeds from services directly like the advertised TOR exit nodes, or lists from your own IDS/IPS and other systems
   - consider purchasing a GEOIP subscription like Maxmind
+  - http://www.mlsecproject.org/
 1. Need to start getting fancy? Take an old box and set it up as a **honeypot**, pay special attention to its logs. Most effective honeypot looks just like what you are protecting, and actually works up to a point, just dead ends at certain depths. Name it like it's production etc. Anything connecting to it is very interesting.
   - https://threatstream.github.io/mhn/
   - http://conpot.org/
   - http://www.honeyd.org/
   - http://sshpot.com/
   - https://github.com/desaster/kippo
+1. **Test your systems** When you have your systems in place, you need some confidence in their capabilities, and that they are meeting their claims, here's some test data:
+  - http://www.secrepo.com/
 1. **Outside assessment** by this point you know enough about your own stuff to give them the info they need to give you more than I mentioned above. You may be comfortable at this point to just keep moving on your own. Nothing is better than a decicated insider who knows your systems and is working to assess and iprove your security.
 1. For times when all else has failed you and you are in **Incident Response** mode
   - http://www.sleuthkit.org/sleuthkit/
