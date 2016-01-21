@@ -58,6 +58,7 @@ DISCLAIMER: I have many years as a security professional. This information is fr
   - Create you own batch feeds from services directly like the advertised TOR exit nodes, or lists from your own IDS/IPS and other systems
   - consider purchasing a GEOIP subscription like Maxmind
   - http://www.mlsecproject.org/
+  - http://iplists.firehol.org/
 1. Need to start getting fancy? Take an old box and set it up as a **honeypot**, pay special attention to its logs. Most effective honeypot looks just like what you are protecting, and actually works up to a point, just dead ends at certain depths. Name it like it's production etc. Anything connecting to it is very interesting.
   - https://threatstream.github.io/mhn/
   - http://conpot.org/
