@@ -9,7 +9,7 @@ DISCLAIMER: I have many years as a security professional. This information is fr
 
 ## A note about security products
 1. Remember that the security industry is built to sell products, which may or may not align with protecting you.
-1. Products are compartmentalized into what's easily developed, packaged and deployed. Real threats dont follow the same dividing lines. If someone has any malicious intentions towards you, they will use everything they can to accomplish their goal and it's ALL related to the same threat. This relationship is rarely seen when multiple products are used for different security components.
+1. Products are compartmentalized into what's easily developed, packaged and deployed. Real threats dont follow the same dividing lines. If someone has any malicious intentions towards you, they will use everything they can to accomplish their goal and it's ALL related to the same threat. This relationship is rarely seen when multiple products are used from different security components.
 1. No one will tell you what you DONT need, or that you are ever SAFE ENOUGH. You have to have a sober assessment of your own vulnerability and risk tolerance/liability for what you're protecting.
 1. You have to be your own best advocate, that's what a CISO is for.
 
