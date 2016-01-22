@@ -7,6 +7,12 @@ DISCLAIMER: I have many years as a security professional. This information is fr
 1. If **public defacement** would damage your business
 1. If **you have no idea** where you sit on all of the above.
 
+## A note about security products
+1. Remember that the security industry is built to sell products, which may or may not align with protecting you.
+1. Products are compartmentalized into what's easily developed, packaged and deployed. Real threats dont follow the same dividing lines. If someone has any malicious intentions towards you, they will use everything they can to accomplish their goal and it's ALL related to the same threat. This relationship is rarely seen when multiple products are used for different security components.
+1. No one will tell you what you DONT need, or that you are ever SAFE ENOUGH. You have to have a sober assessment of your own vulnerability and risk tolerance/liability for what you're protecting.
+1. You have to be your own best advocate, that's what a CISO is for.
+
 ## Security Checklist
 1. **Hire a CISO** First things first. Hire someone that is dedicated to your information security and can spend the necessary time to walk through this process. A good competent CISO should be capable of all of the tasks here, just maybe not all at once. It will be a serial process until/unless there is more staff. Sometimes 1 person is all that is justified or acn be spared in budget, but it's so much better than anyone part time or none at all.
 1. basics like **virus protection** on endpoints
