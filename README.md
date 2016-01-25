@@ -5,6 +5,6 @@ This is a collection of thoughts, that serves a few purposes:
 3. A reference for people to understand how I work and think beyond what they can get from an interview.
 
 - [Security](security.md)
+- [Development](development.md)
 - [Hiring](hiring.md)
 - [Management](management.md)
-- [Development](development.md)
