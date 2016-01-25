@@ -4,9 +4,9 @@
 - Define the interfaces early. Interfaces are touch points between components. When you define the interfaces you can have parallel development. Each component knows what the expected inputs and outputs are and can be developed towards them.
 - Use mircoservices where possible.
 - Mature the product before moving to the next one. If you'd mature the product/project before moving to the next one you will end up babysitting it and never get ahead. 
--- monitoring
--- backups
--- data pruning
--- DB and system maintenance
--- logs and auditing
--- documentation for production, operations, and future developers
+  - monitoring
+  - backups
+  - data pruning
+  - DB and system maintenance
+  - logs and auditing
+  - documentation for production, operations, and future developers
