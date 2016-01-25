@@ -1,1 +1,12 @@
 
+- The right processes at the right time. Don't start a POC with tickets, unit tests continuous integration and every other best practice.  Get something working. Let people play with it, adjust, make sure you're on the right path early (fail fast).
+- Create the skeleton that works from end to end. Then as components are improved they can easily be tested as an integrated unit.
+- Define the interfaces early. Interfaces are touch points between components. When you define the interfaces you can have parallel development. Each component knows what the expected inputs and outputs are and can be developed towards them.
+- Use mircoservices where possible.
+- Mature the product before moving to the next one. If you'd mature the product/project before moving to the next one you will end up babysitting it and never get ahead. 
+-- monitoring
+-- backups
+-- data pruning
+-- DB and system maintenance
+-- logs and auditing
+-- documentation for production, operations, and future developers
