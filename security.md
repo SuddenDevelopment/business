@@ -76,3 +76,7 @@ DISCLAIMER: I have many years as a security professional. This information is fr
 1. **Outside assessment** by this point you know enough about your own stuff to give them the info they need to give you more than I mentioned above. You may be comfortable at this point to just keep moving on your own. Nothing is better than a decicated insider who knows your systems and is working to assess and iprove your security.
 1. For times when all else has failed you and you are in **Incident Response** mode
   - http://www.sleuthkit.org/sleuthkit/
+
+## Other Lists
+
+- https://github.com/rshipp/awesome-malware-analysis#open-source-threat-intelligence
