@@ -57,6 +57,8 @@ DISCLAIMER: I have many years as a security professional. This information is fr
   - https://github.com/tcstool/NoSQLMap
   - http://buffer.github.io/thug/ analyze and resolve found issues
   - https://github.com/rapid7/metasploit-framework
+  - https://cirt.net/nikto2
+  - https://github.com/andresriancho/w3af
 1. **Harden apps** programtically, do you stop brute force password attempts? Clean all vars, pay special attention to var length.
 1. **Create secure bridges** you may consider more dedicated hardened access points / bridges. *BSD is common in this role. only open what's necessary. if you can set inclusive firewall rules instead of exclusive that would help
 1. Now consider something like **Threat Intelligence** when you add a layer of threat intelligence to your SIEM you can add alert states / protections / actions like dont allow traffic from TOR, or we have no business with russia and china.
