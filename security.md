@@ -86,3 +86,5 @@ DISCLAIMER: I have many years as a security professional. This information is fr
 ## Other Lists
 
 - https://github.com/rshipp/awesome-malware-analysis#open-source-threat-intelligence
+- https://github.com/sbilly/awesome-security
+- https://github.com/paralax/awesome-honeypots
