@@ -22,7 +22,7 @@ DISCLAIMER: I have many years as a security professional. This information is fr
   - run your own sandbox: https://github.com/cuckoosandbox/cuckoo
   - run on a hosted sandbox: malwr.com
   - look it up http://virustotal.com
-1. **prevent spam** from getting to user inboxes, if you use something like Gmail you should be pretty good already, if you run Excahnge you'll need to buy something.
+1. **prevent spam** from getting to user inboxes, if you use something like Gmail you should be pretty good already, if you run Exchange you'll need to buy something.
 1. **employee training**. 
   - Phish your users, generate the URLs with something that lets you know who clicked on a URL for reporting. Then you know who needs a refresher course.
   - Have anyone REALLY interested in security? Send them here to learn to start thinking from an informed security perspective: http://captf.com/practice-ctf/	
@@ -67,6 +67,10 @@ DISCLAIMER: I have many years as a security professional. This information is fr
   - consider purchasing a GEOIP subscription like Maxmind
   - http://www.mlsecproject.org/
   - http://iplists.firehol.org/
+1. **Manage all the Threat Intelligence**
+  - http://www.misp-project.org/
+  - https://github.com/defpoint/threat_note
+  - https://crits.github.io/
 1. Need to start getting fancy? Take an old box and set it up as a **honeypot**, pay special attention to its logs. Most effective honeypot looks just like what you are protecting, and actually works up to a point, just dead ends at certain depths. Name it like it's production etc. Anything connecting to it is very interesting.
   - https://threatstream.github.io/mhn/
   - http://conpot.org/
