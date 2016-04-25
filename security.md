@@ -71,6 +71,7 @@ DISCLAIMER: I have many years as a security professional. This information is fr
   - http://www.misp-project.org/
   - https://github.com/defpoint/threat_note
   - https://crits.github.io/
+  - https://www.threatcrowd.org/
 1. Need to start getting fancy? Take an old box and set it up as a **honeypot**, pay special attention to its logs. Most effective honeypot looks just like what you are protecting, and actually works up to a point, just dead ends at certain depths. Name it like it's production etc. Anything connecting to it is very interesting.
   - https://github.com/paralax/awesome-honeypots
   - https://threatstream.github.io/mhn/
