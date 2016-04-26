@@ -41,6 +41,7 @@ DISCLAIMER: I have many years as a security professional. This information is fr
 1. **secure your most valuable area** internal firewall or whatever is appropriate, think at multiple layers. I cant tell you what is most valuable.
 1. **get a  SIEM**, there are a few free ones, or you can write your own if you are proficient in large data stream handling
   - https://www.alienvault.com/solutions/siem-log-management
+  - http://siemonster.com/
 1. **baseline your network**, throw everything at the SIEM, look at it, what's normal, what's unusual, establish a baseline of what your network should look like.
 1. **examine your activity** Identify what definitely should not happen on your network, they sections like user land and systems, infrastructure ips, outside in, inside out etc.
 1. Look into an **IPS/IDS/PROXY** based on your needs. they should be able to give you significant data into your SIEM to investigate. Keep in mind these will have false positives but it's good to have this data to start with and then start filtering.
