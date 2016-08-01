@@ -71,6 +71,7 @@ DISCLAIMER: I have many years as a security professional. This information is fr
   - http://www.mlsecproject.org/
   - http://iplists.firehol.org/
 1. **Manage all the Threat Intelligence**
+  - share your threat intelligence in a community: https://github.com/syphon1c/Threatelligence
   - http://www.misp-project.org/
   - https://github.com/defpoint/threat_note
   - https://crits.github.io/
