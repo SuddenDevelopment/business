@@ -91,6 +91,9 @@ DISCLAIMER: I have many years as a security professional. This information is fr
   - http://www.sleuthkit.org/sleuthkit/
   - https://github.com/defpoint/threat_note
 
+1. **Skip some steps** For small jobs where it's appropriate to have a cheap multiple in one device for cheap check out
+  - http://www.ipfire.org/
+
 ## Other Lists
 
 - https://github.com/rshipp/awesome-malware-analysis#open-source-threat-intelligence
