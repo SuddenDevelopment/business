@@ -11,11 +11,13 @@ DISCLAIMER: I have many years as a security professional. This information is fr
 1. Remember that the security industry is built to sell products, which may or may not align with protecting you.
 1. Products are compartmentalized into what's easily developed, packaged and deployed. Real threats dont follow the same dividing lines. If someone has any malicious intentions towards you, they will use everything they can to accomplish their goal and it's ALL related to the same threat. This relationship is rarely seen when multiple products are used from different security components.
 1. No one will tell you what you DONT need, or that you are ever SAFE ENOUGH. You have to have a sober assessment of your own vulnerability and risk tolerance/liability for what you're protecting.
-1. You have to be your own best advocate, that's what a CISO is for.
+1. Most tools are great up to the 80% level very quickly getting you results in a POC to purchase. After that they get more difficult to tune to your needs, whcih becomes necessary.
+1. Many of the tools will have an overwhelming amount of alerts you need to sift through internall or outside the tool, but hopefully automated. 
+1. You have to be your own best advocate.
 
 ## Security Checklist
-1. **Hire a CISO** First things first. Hire someone that is dedicated to your information security and can spend the necessary time to walk through this process. A good competent CISO should be capable of all of the tasks here, just maybe not all at once. It will be a serial process until/unless there is more staff. Sometimes 1 person is all that is justified or acn be spared in budget, but it's so much better than anyone part time or none at all.
-1. basics like **virus protection** on endpoints
+1. **Hire a CISO** First things first. Hire someone that is dedicated to your information security and can spend the necessary time to walk through this process. A good competent CISO should be capable of all of the tasks here, just maybe not all at once. It will be a serial process until/unless there is more staff. Sometimes 1 person is all that is justified or can be spared in budget, but it's so much better than anyone part time or none at all.
+1. basics like **endpoint protection** on endpoints
   - https://antivirus.comodo.com/
   - http://ossec.github.io/
 1. **Help with Binaries** Inevitably you'll run into situations where you are suspicious of files and you don't want to wait until antivirus sees it or misses it to find out if it's ok. In this siutation you can sandbox a file, or at least try to look it up:
