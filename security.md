@@ -97,6 +97,7 @@ These are some of the areas people consider for security specialty. They roughly
 	13. internal system credentials / authentication
 	14. All of the above in backups
 8. **Reduce the critical attack surface**: The more consolidated critical systems and data are the easier it is to secure
+	1. Consider offloading or tokenizing PII. If you dont need to keep it don't. If you have to keep it, protect it.
 9. Focus on **Securing what's most critical first**
 10. **Vulnerability Scanning**: verify system patching against known vulnerabilities
 11. **Employee Phishing**: Run some basic tests aginst your employees, give them remedial training based on the results
@@ -109,9 +110,10 @@ These are some of the areas people consider for security specialty. They roughly
 	9. Customers
 	10. Employees
 	11. Partners
+7. **Mobile Security** A lot of business is done on personal phones and they are traditionally ignored in corporate security
 8. **IDS/IPS**: Intrusion detection and prevention. Recognize and alert on suspicious network traffic 
 9. **Holistic Monitoring**: Add your specific business context and expected behaviors into a monitoring app to understand what changes and add internal context to alerts.
-10. **Context of external system**s, Threat Intelligence: External systems are hard to understand without some threat intelligence. This can help you understand if the suspicious traffic you are seeing is a compromised customer, or a state sponsored hacking group. You won;t know if it's actionable until you have the context for the decision.
+10. **Context of external system**s, aka **Threat Intelligence**: External systems are hard to understand without some threat intelligence. This can help you understand if the suspicious traffic you are seeing is a compromised customer, or a state sponsored hacking group. You won;t know if it's actionable until you have the context for the decision.
 11. **Threat Hunting**: Assume you are compromised, find the evidence
 11. **Deception Technology**: This is pretty advanced level of sophistication and maturity for most. Setup honeypots whether they are on your network, in the cloud, in your users or in your application. Any traffic you see here is known to be malicious whether automated or targeted. This can help because it doesnt require filtering benign traffic.
 
