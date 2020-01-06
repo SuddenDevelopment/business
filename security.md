@@ -99,6 +99,7 @@ These are some of the areas people consider for security specialty. They roughly
 8. **Reduce the critical attack surface**: The more consolidated critical systems and data are the easier it is to secure
 	1. Consider offloading or tokenizing PII. If you dont need to keep it don't. If you have to keep it, protect it.
 9. Focus on **Securing what's most critical first**
+10. **Audit access** to critical systems and data.
 10. **Vulnerability Scanning**: verify system patching against known vulnerabilities
 11. **Employee Phishing**: Run some basic tests aginst your employees, give them remedial training based on the results
 10. **Forensic capability**: If a system is compromised how do you know the scale and impact? How long will it take to understand
