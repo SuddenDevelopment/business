@@ -1,11 +1,20 @@
 DISCLAIMER: I have many years as a security professional. This information is freely given, not proprietary, and has no guarantees. I hope that you find it useful. suggestion for improvements are always welcome.
 
+# Security Discussion Reference
+
 ## WHY YOU SHOULD CARE: 
 
 1. If you have any **information** that can damage you or your customers you have an obligation to protect it. 
+2. If you are **obligated by any regulations**
 1. If you have any **online services and systems** that are critical to your operations.
 1. If **public defacement** would damage your business
-1. If **you have no idea** where you sit on all of the above.
+1. If **you have no idea** where you sit on all of the above. Ignorance isnt a great legal defense and worse brand protection.
+
+## Security misconceptions
+
+1. **Security is in layers**, don;t leave gaping holes because you expect something else to catch something. The best security is highly redundant in coverage of attacks
+2. **Security through obscurity is a myth** Don't assume anything that requires special knowledge or is hidden or not advertised will not be attacked.
+3. **Products alone won't protect you.** 
 
 ## A note about security products
 1. Remember that the security industry is built to sell products, which may or may not align with protecting you.
@@ -15,90 +24,112 @@ DISCLAIMER: I have many years as a security professional. This information is fr
 1. Many of the tools will have an overwhelming amount of alerts you need to sift through internall or outside the tool, but hopefully automated. 
 1. You have to be your own best advocate.
 
-## Security Checklist
-1. **Hire a CISO** First things first. Hire someone that is dedicated to your information security and can spend the necessary time to walk through this process. A good competent CISO should be capable of all of the tasks here, just maybe not all at once. It will be a serial process until/unless there is more staff. Sometimes 1 person is all that is justified or can be spared in budget, but it's so much better than anyone part time or none at all.
-1. basics like **endpoint protection** on endpoints
-  - https://antivirus.comodo.com/
-  - http://ossec.github.io/
-1. **Help with Binaries** Inevitably you'll run into situations where you are suspicious of files and you don't want to wait until antivirus sees it or misses it to find out if it's ok. In this siutation you can sandbox a file, or at least try to look it up:
-  - run your own sandbox: https://github.com/cuckoosandbox/cuckoo
-  - run on a hosted sandbox: malwr.com
-  - look it up http://virustotal.com
-1. **prevent spam** from getting to user inboxes, if you use something like Gmail you should be pretty good already, if you run Exchange you'll need to buy something.
-1. **employee training**. 
-  - Phish your users, generate the URLs with something that lets you know who clicked on a URL for reporting. Then you know who needs a refresher course.
-  - Have anyone REALLY interested in security? Send them here to learn to start thinking from an informed security perspective: http://captf.com/practice-ctf/	
-1. **Developer training** start here:
-  - https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
-  - http://retirejs.github.io/retire.js/
-1. **Identify what is critical** and what is not, what is worth securing? Don't just focus on the perimeter, many things come from inside your network. Identfy user land separate from systems land
-  - Code repositories
-  - customer account information
-  - Accounting data
-  - Email & ticket systems
-  - File shares / document repositories
-  - internal system credentials / authentication
-  - All of the above in backups
-1. **Reduce the footprint of critical assets** If what is most valuable is spread out everywhere can you consolidate it so that you can focus on hardening a smaller area (For example access audit logs, tight controls)
-1. **secure your most valuable area** internal firewall or whatever is appropriate, think at multiple layers. I cant tell you what is most valuable.
-1. **get a  SIEM**, there are a few free ones, or you can write your own if you are proficient in large data stream handling
-  - https://www.alienvault.com/solutions/siem-log-management
-  - http://siemonster.com/
-1. **baseline your network**, throw everything at the SIEM, look at it, what's normal, what's unusual, establish a baseline of what your network should look like.
-1. **examine your activity** Identify what definitely should not happen on your network, they sections like user land and systems, infrastructure ips, outside in, inside out etc.
-1. Look into an **IPS/IDS/PROXY** based on your needs. they should be able to give you significant data into your SIEM to investigate. Keep in mind these will have false positives but it's good to have this data to start with and then start filtering.
-  - http://suricata-ids.org/
-  - https://www.bro.org/
-  - http://www.squid-cache.org/
-  - http://www.modsecurity.org/
-  - https://github.com/aol/moloch
-1. **Add alerts** scenarios to your SIEM
-1. **open source scan** everything 
-  - https://www.shodan.io/search?query=1.2.3.4
-  - http://www.openvas.org/ 
-  - http://sqlmap.org/ 
-  - https://github.com/tcstool/NoSQLMap
-  - http://buffer.github.io/thug/ analyze and resolve found issues
-  - https://github.com/rapid7/metasploit-framework
-  - https://cirt.net/nikto2
-  - https://github.com/andresriancho/w3af
-1. **Harden apps** programtically, do you stop brute force password attempts? Clean all vars, pay special attention to var length. Lookup a term called "Defensive Coding" for more resources. These can help as well
-  - http://retirejs.github.io/retire.js/
-  - https://github.com/fuzzdb-project/fuzzdb
-1. **Create secure bridges** you may consider more dedicated hardened access points / bridges. *BSD is common in this role. only open what's necessary. if you can set inclusive firewall rules instead of exclusive that would help
-1. Now consider something like **Threat Intelligence** when you add a layer of threat intelligence to your SIEM you can add alert states / protections / actions like dont allow traffic from TOR, or we have no business with russia and china.
-  - be careful with free crowd sourced threat feeds. They are often poisoned and they are very stale.
-  - Create you own batch feeds from services directly like the advertised TOR exit nodes, or lists from your own IDS/IPS and other systems
-  - consider purchasing a GEOIP subscription like Maxmind
-  - http://www.mlsecproject.org/
-  - http://iplists.firehol.org/
-1. **Manage all the Threat Intelligence**
-  - share your threat intelligence in a community: https://github.com/syphon1c/Threatelligence
-  - http://www.misp-project.org/
-  - https://github.com/defpoint/threat_note
-  - https://crits.github.io/
-  - https://www.threatcrowd.org/
-  - https://github.com/defpoint/threat_Note
-1. Need to start getting fancy? Take an old box and set it up as a **honeypot**, pay special attention to its logs. Most effective honeypot looks just like what you are protecting, and actually works up to a point, just dead ends at certain depths. Name it like it's production etc. Anything connecting to it is very interesting.
-  - https://github.com/paralax/awesome-honeypots
-  - https://threatstream.github.io/mhn/
-  - http://conpot.org/
-  - http://www.honeyd.org/
-  - http://sshpot.com/
-  - https://github.com/desaster/kippo
-1. **Test your systems** When you have your systems in place, you need some confidence in their capabilities, and that they are meeting their claims, here's some test data:
-  - http://www.secrepo.com/
-1. **Outside assessment** by this point you know enough about your own stuff to give them the info they need to give you more than I mentioned above. You may be comfortable at this point to just keep moving on your own. Nothing is better than a decicated insider who knows your systems and is working to assess and iprove your security.
-1. For times when all else has failed you and you are in **Incident Response** mode
-  - http://www.sleuthkit.org/sleuthkit/
-  - https://github.com/defpoint/threat_note
+## Security Checklists
+It's difficult to have a single checklist for security. It would assume a single perspective or approach. These checklists are meant to have a lot overlap but approach the problem from varying perspectives to catch distinct things. These lists are also good to check against an MSSP you hire. Any information gathered in this process will have a large overlap to what they need to know to properly serve you.
 
-1. **Skip some steps** For small jobs where it's appropriate to have a cheap multiple in one device for cheap check out
-  - http://www.ipfire.org/
+1. Discovery: Goals, Risk, Needs
+2. Coverage: Assess coverage based on the OSI model
+3. Best Practices: See what others do as popular solutions
+4. Custom Applications: If you write your own software you need this list
 
-http://www.procdot.com/
+## Discovery Checklist
+
+1. What are your security goals? See the "Why you should care" section above for ideas
+2. What are your known security risks?
+3. What regulations do you need to legally comply with?
+4. If something were wrong, how would you know? (per scenario)
+
+## Security Coverage Checklist
+
+1. Physical
+	2. Access to employee systems
+	3. Access to servers
+	4. Access to network
+	5. Access to sensitive paperwork
+2. Network
+	3. Physical, Ethernet ports
+	4. Wifi
+	5. Remote
+	6. Segmentation
+3. Transport
+	4. Employee access to systems
+	5. Customer access to systems
+	6. Partner access to systems
+4. Session
+	5. Session timeouts
+	6. Session portability
+5. Application
+	6. Operating System
+	7. Business Applications
+	8. Internal Applications
+6. Data
+	7. Business critical data
+	8. Sensitive data
+7. Employees
+	8. Naive behavior
+	9. Sloppy OpSec
+	10. Malicious Intent
+8. Partners
+	9. Insecure partner
+	10. Compromised partner
+	11. Malicious partner
+9. Outsiders
+	10. Automated: Target of opportunity
+	11. Targetted: Target of value
+
+## Best Practices Checklist
+
+These are some of the areas people consider for security specialty. They roughly align to products and in recommended priority order. The more you can check off with fewer products the better. 3 through 10 are considered so basic that it's recommended for the average home computer user. 1 & 2 are simply necessary to ensure they are happening.
+
+0. **Designate Someone who is responsible for security**, preferably full time.
+1. **Policy and Procedure**: Know what to do and communicate it.
+1. **Endpoint Protection**: What used to be known as antivirus, with higher standards
+2. **Multi Factor Authentication**: require this for all critical accounts for employees and customers
+3. **Employee Awareness Training**: Make your employees harder to social engineer 
+5. **Firewall**, Firewall management: the most basic network protection for all systems
+6. **Patching**: stay up to date on all firmware, operating systems, applications, dependancies
+7. **Identify what is critical**. Data & Systems
+	8. Code repositories, proprietary information
+	9. customer account information
+	10. Accounting data
+	11. Email & ticket systems
+	12. File shares / document repositories
+	13. internal system credentials / authentication
+	14. All of the above in backups
+8. **Reduce the critical attack surface**: The more consolidated critical systems and data are the easier it is to secure
+9. Focus on **Securing what's most critical first**
+10. **Vulnerability Scanning**: verify system patching against known vulnerabilities
+11. **Employee Phishing**: Run some basic tests aginst your employees, give them remedial training based on the results
+10. **Forensic capability**: If a system is compromised how do you know the scale and impact? How long will it take to understand
+5. **Global Policy Management**: Enforce things like strong passwords on all systems
+6. **Software management**: Make sure all systems stay up to date and free of prohibited software that is insecure or malicious
+6. **Proxy / DNS / Content filtering**: Keep systems away from the riskiest content.
+7. **SPAM Filtering**: Filter email before employees have a chance to be tricked by it.
+8. **Identify Normal Behavior**
+	9. Customers
+	10. Employees
+	11. Partners
+8. **IDS/IPS**: Intrusion detection and prevention. Recognize and alert on suspicious network traffic 
+9. **Holistic Monitoring**: Add your specific business context and expected behaviors into a monitoring app to understand what changes and add internal context to alerts.
+10. **Context of external system**s, Threat Intelligence: External systems are hard to understand without some threat intelligence. This can help you understand if the suspicious traffic you are seeing is a compromised customer, or a state sponsored hacking group. You won;t know if it's actionable until you have the context for the decision.
+11. **Threat Hunting**: Assume you are compromised, find the evidence
+11. **Deception Technology**: This is pretty advanced level of sophistication and maturity for most. Setup honeypots whether they are on your network, in the cloud, in your users or in your application. Any traffic you see here is known to be malicious whether automated or targeted. This can help because it doesnt require filtering benign traffic.
+
+## Custom Software Checklist
+
+1. **Developer training**: All developers should know defensive coding tactics and how they apply to what they are developing.
+2. **Harden applications**: Identify possible attack vectors on your software and block them from being effective.
+	3. Clean variables
+	4. Avoid Evals, implicit or otherwise
+	4. Password and session requirements
+	5. Least privilege access
+	6. Zero trust development
+	7. Remove Easy Recon
+2. **Dependancy management**: Regularly scan dependancy libraries for known vulnerabilities
+2. **Static Analysis**: Scan your code with language specific products that will look for insecure programming practices.
+3. **Web Application Firewall**, aka Layer 7 firewall: 
+4. **Pen Test** your software, whether internal or external, someone friendly needs to make an intelligent attempt at compromising your systems and report the findings.
 
 ## Other Lists
 
-- https://github.com/rshipp/awesome-malware-analysis#open-source-threat-intelligence
 - https://github.com/sbilly/awesome-security
