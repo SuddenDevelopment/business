@@ -32,6 +32,12 @@ It's difficult to have a single checklist for security. It would assume a single
 3. Best Practices: See what others do as popular solutions
 4. Custom Applications: If you write your own software you need this list
 
+## Legend
+
+:white_check_mark: Process
+:wrench: Tool
+:gear: configuration
+
 ## Discovery Checklist
 
 1. What are your security goals? See the "Why you should care" section above for ideas
@@ -81,14 +87,14 @@ It's difficult to have a single checklist for security. It would assume a single
 
 These are some of the areas people consider for security specialty. They roughly align to products and in recommended priority order. The more you can check off with fewer products the better. 3 through 10 are considered so basic that it's recommended for the average home computer user. 1 & 2 are simply necessary to ensure they are happening.
 
-1. **Designate Someone who is responsible for security**, preferably full time.
-1. **Policy and Procedure**: Know what to do and communicate it.
-1. **Endpoint Protection**: What used to be known as antivirus, with higher standards
-1. **Multi Factor Authentication**: require this for all critical accounts for employees and customers
-1. **Employee Awareness Training**: Make your employees harder to social engineer 
-1. **Firewall**, Firewall management: the most basic network protection for all systems
-1. **Patching**: stay up to date on all firmware, operating systems, applications, dependancies
-1. **Identify what is critical**. Data & Systems
+1. **Designate Someone who is responsible for security**, :white_check_mark: preferably full time. 
+1. **Policy and Procedure**: :white_check_mark: Know what to do and communicate it. 
+1. **Endpoint Protection**: :wrench: What used to be known as antivirus, with higher standards 
+1. **Multi Factor Authentication**: :gear: require this for all critical accounts for employees and customers
+1. **Employee Awareness Training**: :white_check_mark: Make your employees harder to social engineer 
+1. **Firewall** :wrench: , Firewall management :white_check_mark: :  the most basic network protection for all systems
+1. **Patching**: :white_check_mark: stay up to date on all firmware, operating systems, applications, dependancies
+1. **Identify what is critical**.:white_check_mark: Data & Systems
 	1. Code repositories, proprietary information
 	1. customer account information
 	1. Accounting data
@@ -96,42 +102,42 @@ These are some of the areas people consider for security specialty. They roughly
 	1. File shares / document repositories
 	1. internal system credentials / authentication
 	1. All of the above in backups
-1. **Reduce the critical attack surface**: The more consolidated critical systems and data are the easier it is to secure
+1. **Reduce the critical attack surface**: :gear: The more consolidated critical systems and data are the easier it is to secure
 	1. Consider offloading or tokenizing PII. If you dont need to keep it don't. If you have to keep it, protect it.
-1. Focus on **Securing what's most critical first**
-1. **Audit access** to critical systems and data.
-1. **Vulnerability Scanning**: verify system patching against known vulnerabilities
-1. **Employee Phishing**: Run some basic tests aginst your employees, give them remedial training based on the results
-1. **Forensic capability**: If a system is compromised how do you know the scale and impact? How long will it take to understand
-1. **Global Policy Management**: Enforce things like strong passwords on all systems
-1. **Software management**: Make sure all systems stay up to date and free of prohibited software that is insecure or malicious
-1. **Proxy / DNS / Content filtering**: Keep systems away from the riskiest content.
-1. **SPAM Filtering**: Filter email before employees have a chance to be tricked by it.
-1. **Identify Normal Behavior**
+1. Focus on **Securing what's most critical first** :white_check_mark:
+1. **Audit access** :white_check_mark: :wrench: to critical systems and data.
+1. **Vulnerability Scanning**: :white_check_mark: verify system patching against known vulnerabilities
+1. **Employee Phishing**: :white_check_mark: :wrench: Run some basic tests aginst your employees, give them remedial training based on the results
+1. **Forensic capability**: :wrench: If a system is compromised how do you know the scale and impact? How long will it take to understand
+1. **Global Policy Management**: :gear: Enforce things like strong passwords on all systems
+1. **Software management**: :white_check_mark: Make sure all systems stay up to date and free of prohibited software that is insecure or malicious
+1. **Proxy / DNS / Content filtering**: :wrench: Keep systems away from the riskiest content.
+1. **SPAM Filtering**: :wrench: Filter email before employees have a chance to be tricked by it.
+1. **Identify Normal Behavior** :white_check_mark:
 	1. Customers
 	1. Employees
 	1. Partners
-1. **Mobile Security** A lot of business is done on personal phones and they are traditionally ignored in corporate security
-1. **IDS/IPS**: Intrusion detection and prevention. Recognize and alert on suspicious network traffic 
-1. **Holistic Monitoring**: Add your specific business context and expected behaviors into a monitoring app to understand what changes and add internal context to alerts.
-1. **Context of external system**s, aka **Threat Intelligence**: External systems are hard to understand without some threat intelligence. This can help you understand if the suspicious traffic you are seeing is a compromised customer, or a state sponsored hacking group. You won;t know if it's actionable until you have the context for the decision.
-1. **Threat Hunting**: Assume you are compromised, find the evidence
-1. **Deception Technology**: This is pretty advanced level of sophistication and maturity for most. Setup honeypots whether they are on your network, in the cloud, in your users or in your application. Any traffic you see here is known to be malicious whether automated or targeted. This can help because it doesnt require filtering benign traffic.
+1. **Mobile Security** :white_check_mark: :wrench: A lot of business is done on personal phones and they are traditionally ignored in corporate security
+1. **IDS/IPS**: :wrench: Intrusion detection and prevention. Recognize and alert on suspicious network traffic 
+1. **Holistic Monitoring**: "wrench: :white_check_mark: Add your specific business context and expected behaviors into a monitoring app to understand what changes and add internal context to alerts.
+1. **Context of external system**s, aka **Threat Intelligence**: :wrench: External systems are hard to understand without some threat intelligence. This can help you understand if the suspicious traffic you are seeing is a compromised customer, or a state sponsored hacking group. You won;t know if it's actionable until you have the context for the decision.
+1. **Threat Hunting**: :white_check_mark: :wrench: Assume you are compromised, find the evidence
+1. **Deception Technology**: :gear: :wrench: This is pretty advanced level of sophistication and maturity for most. Setup honeypots whether they are on your network, in the cloud, in your users or in your application. Any traffic you see here is known to be malicious whether automated or targeted. This can help because it doesnt require filtering benign traffic.
 
 ## Custom Software Checklist
 
-1. **Developer training**: All developers should know defensive coding tactics and how they apply to what they are developing.
-1. **Harden applications**: Identify possible attack vectors on your software and block them from being effective.
+1. **Developer training**: :white_check_mark: All developers should know defensive coding tactics and how they apply to what they are developing.
+1. **Harden applications**: :gear: Identify possible attack vectors on your software and block them from being effective.
 	1. Clean variables
 	1. Avoid Evals, implicit or otherwise
 	1. Password and session requirements
 	1. Least privilege access
 	1. Zero trust development
 	1. Remove Easy Recon
-1. **Dependancy management**: Regularly scan dependancy libraries for known vulnerabilities
-1. **Static Analysis**: Scan your code with language specific products that will look for insecure programming practices.
-1. **Web Application Firewall**, aka Layer 7 firewall: 
-1. **Pen Test** your software, whether internal or external, someone friendly needs to make an intelligent attempt at compromising your systems and report the findings.
+1. **Dependancy management**: :gear: Regularly scan dependancy libraries for known vulnerabilities
+1. **Static Analysis**: :wrench: Scan your code with language specific products that will look for insecure programming practices.
+1. **Web Application Firewall** :wrench: aka Layer 7 firewall: 
+1. **Pen Test** :wrench: :white_check_mark: your software, whether internal or external, someone friendly needs to make an intelligent attempt at compromising your systems and report the findings.
 
 ## Other Lists
 
